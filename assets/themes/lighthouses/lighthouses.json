@@ -1,0 +1,21 @@
+{
+  "id": "lighthouses",
+  "title": {
+    "en": "Lighthouses",
+    "de": "Leuchttürme",
+    "da": "Fyrtårne"
+  },
+  "description": {
+    "en": "Lighthouses are tall buildings with a light on top to guide marine traffic.",
+    "de": "Leuchttürme sind hohe Gebäude mit einem Licht an der Spitze, das den Schiffsverkehr leitet."
+  },
+  "icon": "./assets/themes/lighthouses/lighthouse.svg",
+  "startZoom": 0,
+  "startLat": 51.33884,
+  "startLon": 3.14154,
+  "defaultBackgroundId": "protomaps.white",
+  "credits": "Seppe Santens",
+  "layers": [
+    "lighthouse"
+  ]
+}
