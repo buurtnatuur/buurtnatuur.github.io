@@ -35,7 +35,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 var _this = this;
-var version = "0.0.8-3575a27fb919cffd3ec40db4fa8c3353fe80e33e";
+var version = "0.44.5";
 function install() {
     return __awaiter(this, void 0, void 0, function () {
         return __generator(this, function (_a) {
@@ -60,21 +60,27 @@ function activate() {
         });
     });
 }
-var cacheFirst = function (event) { return __awaiter(_this, void 0, void 0, function () {
+function fetchAndCache(event) {
+    return fetch(event.request).then(function (networkResponse) {
+        return caches.open(version).then(function (cache) {
+            cache.put(event.request, networkResponse.clone());
+            console.log("Cached", event.request);
+            return networkResponse;
+        });
+    });
+}
+var cacheFirst = function (event, attemptUpdate) { return __awaiter(_this, void 0, void 0, function () {
     return __generator(this, function (_a) {
         switch (_a.label) {
             case 0: return [4 /*yield*/, event.respondWith(caches.match(event.request, { ignoreSearch: true }).then(function (cacheResponse) {
                     if (cacheResponse !== undefined) {
-                        console.log("Loaded from cache: ", event.request);
+                        console.debug("Loaded from cache: ", event.request);
+                        if (attemptUpdate) {
+                            fetchAndCache(event);
+                        }
                         return cacheResponse;
                     }
-                    return fetch(event.request).then(function (networkResponse) {
-                        return caches.open(version).then(function (cache) {
-                            cache.put(event.request, networkResponse.clone());
-                            console.log("Cached", event.request);
-                            return networkResponse;
-                        });
-                    });
+                    return fetchAndCache(event);
                 }))];
             case 1:
                 _a.sent();
@@ -106,11 +112,11 @@ self.addEventListener("fetch", function (e) { return __awaiter(_this, void 0, vo
                     !origin_1.hostname.endsWith(".local") &&
                     !origin_1.host.endsWith(".gitpod.io");
                 if (!shouldBeCached) {
-                    console.log("Not intercepting ", requestUrl.toString(), origin_1.host, requestUrl.host);
+                    console.debug("Not intercepting ", requestUrl.toString(), origin_1.host, requestUrl.host);
                     // We return _without_ calling event.respondWith, which signals the browser that it'll have to handle it himself
                     return [2 /*return*/];
                 }
-                return [4 /*yield*/, cacheFirst(event)];
+                return [4 /*yield*/, cacheFirst(event, true)];
             case 4:
                 _a.sent();
                 return [3 /*break*/, 7];
