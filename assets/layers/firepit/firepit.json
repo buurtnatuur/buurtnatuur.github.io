@@ -1,7 +1,7 @@
 {
   "id": "firepit",
   "name": {
-    "en": "Firepitd",
+    "en": "Firepit",
     "de": "Feuerstelle"
   },
   "description": {
@@ -113,14 +113,15 @@
       "override": {
         "question": {
           "en": "Is the firepit available all around the year?",
-          "nl": "Is deze kampvuurplaats heel het jaar door beschikbaar?"
+          "nl": "Is deze kampvuurplaats heel het jaar door beschikbaar?",
+          "de": "Ist diese Feuerstelle rund um das Jahr nutzbar?"
         }
       }
     }
   ],
+  "deletion": true,
   "allowMove": {
     "enableRelocation": false,
     "enableImproveAccuracy": true
-  },
-  "deletion": true
+  }
 }

@@ -30,7 +30,7 @@
             "0": {
                 "title": "一塊告示牌"
             },
-            "1": {
+            "2": {
                 "title": "獨自設立的海報框"
             }
         }
@@ -56,6 +56,12 @@
                     "1": {
                         "then": "壁畫"
                     },
+                    "10": {
+                        "then": "Azulejo (西班牙雕塑作品名稱)"
+                    },
+                    "11": {
+                        "then": "瓷磚"
+                    },
                     "2": {
                         "then": "繪畫"
                     },
@@ -79,12 +85,6 @@
                     },
                     "9": {
                         "then": "寬慰"
-                    },
-                    "10": {
-                        "then": "Azulejo (西班牙雕塑作品名稱)"
-                    },
-                    "11": {
-                        "then": "瓷磚"
                     }
                 },
                 "question": "這是什麼類型的藝術品？",
@@ -486,6 +486,12 @@
             "render": "攀岩社團"
         }
     },
+    "cycle_highways": {
+        "name": "單車高速公路",
+        "title": {
+            "render": "單車高速公路"
+        }
+    },
     "extinguisher": {
         "description": "顯示消防栓的地圖圖層。"
     },
@@ -782,6 +788,24 @@
     },
     "usersettings": {
         "tagRenderings": {
+            "edit-profile": {
+                "render": {
+                    "special": {
+                        "text": "編輯你的個人檔敘述"
+                    }
+                }
+            },
+            "profile-description": {
+                "mappings": {
+                    "0": {
+                        "then": {
+                            "special": {
+                                "text": "新增個人檔敘述"
+                            }
+                        }
+                    }
+                }
+            },
             "translation-completeness": {
                 "render": "{_theme} 的 {_language} 翻譯目前是 {_translation_percentage}%：{_translation_total} 中的 {_translation_translated_count} 已經翻譯了"
             },

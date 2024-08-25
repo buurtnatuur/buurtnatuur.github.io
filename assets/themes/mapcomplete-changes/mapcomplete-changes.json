@@ -3,17 +3,14 @@
   "title": {
     "en": "Changes made with MapComplete"
   },
-  "shortDescription": {
-    "en": "Shows changes made by MapComplete"
-  },
   "description": {
     "en": "This maps shows all the changes made with MapComplete"
   },
+  "shortDescription": {
+    "en": "Shows changes made by MapComplete"
+  },
   "icon": "./assets/svg/logo.svg",
   "hideFromOverview": true,
-  "startLat": 0,
-  "startLon": 0,
-  "startZoom": 1,
   "layers": [
     {
       "id": "mapcomplete-changes",
@@ -190,6 +187,10 @@
                     "then": "./assets/themes/charging_stations/logo.svg"
                   },
                   {
+                    "if": "theme=circular_economy",
+                    "then": "./assets/themes/circular_economy/circular.svg"
+                  },
+                  {
                     "if": "theme=climbing",
                     "then": "./assets/themes/climbing/climbing_icon.svg"
                   },
@@ -262,6 +263,10 @@
                     "then": "./assets/themes/advertising/wall_painting.svg"
                   },
                   {
+                    "if": "theme=glutenfree",
+                    "then": "./assets/layers/questions/glutenfree.svg"
+                  },
+                  {
                     "if": "theme=grb",
                     "then": "./assets/themes/grb/logo.svg"
                   },
@@ -283,7 +288,7 @@
                   },
                   {
                     "if": "theme=hotels",
-                    "then": "./assets/layers/hotel/hotel.svg"
+                    "then": "./assets/layers/tourism_accomodation/hotel.svg"
                   },
                   {
                     "if": "theme=icecream",
@@ -300,6 +305,10 @@
                   {
                     "if": "theme=kerbs_and_crossings",
                     "then": "./assets/layers/kerbs/KerbIcon.svg"
+                  },
+                  {
+                    "if": "theme=lactosefree",
+                    "then": "./assets/layers/questions/lactose_free.svg"
                   },
                   {
                     "if": "theme=lighthouses",
@@ -388,10 +397,6 @@
                   {
                     "if": "theme=shops",
                     "then": "./assets/themes/shops/shop.svg"
-                  },
-                  {
-                    "if": "theme=sidewalks",
-                    "then": "./assets/svg/bug.svg"
                   },
                   {
                     "if": "theme=ski",

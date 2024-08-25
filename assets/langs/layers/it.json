@@ -32,51 +32,51 @@
                 "description": "Grande struttura pubblicitaria all'aperto, trovata normalmente in aree ad alto traffico come accanto a strade molto trafficate",
                 "title": "un cartellone"
             },
-            "1": {
-                "title": "un cartellone pubblicitario fissato a terra"
-            },
-            "2": {
-                "title": "un cartellone pubblicitario fissato al muro"
-            },
-            "3": {
-                "title": "un contenitore di poster pubblicitari di una pensilina del trasporto pubblico"
-            },
-            "4": {
-                "description": "PIccolo pannello per la pubblicità di vicinanza, generalmente destinato ai pedoni",
-                "title": "un piccolo pannello"
-            },
-            "5": {
-                "description": "Una struttura cilindrica all'esterno con affissa della pubblicità",
-                "title": "una colonna"
-            },
-            "6": {
-                "title": "una bandiera"
-            },
-            "7": {
-                "title": "uno schermo"
-            },
-            "8": {
-                "title": "uno schermo fissato al muro"
-            },
-            "9": {
+            "10": {
                 "title": "uno schermo montato su una pensilina del traporto pubblico"
             },
-            "10": {
+            "11": {
                 "description": "Un telo impermeabile con un messaggio stampato, fissato in modo permanente al muro",
                 "title": "un telone"
             },
-            "11": {
+            "12": {
                 "title": "un totem"
             },
-            "12": {
+            "13": {
                 "description": "Utilizzato per insegna pubblicitaria, un'insegna al neon, i loghi o le indicazioni d'entrata",
                 "title": "un'insegna"
             },
-            "13": {
+            "14": {
                 "title": "una scultura"
             },
-            "14": {
+            "15": {
                 "title": "un murales"
+            },
+            "2": {
+                "title": "un cartellone pubblicitario fissato a terra"
+            },
+            "3": {
+                "title": "un cartellone pubblicitario fissato al muro"
+            },
+            "4": {
+                "title": "un contenitore di poster pubblicitari di una pensilina del trasporto pubblico"
+            },
+            "5": {
+                "description": "PIccolo pannello per la pubblicità di vicinanza, generalmente destinato ai pedoni",
+                "title": "un piccolo pannello"
+            },
+            "6": {
+                "description": "Una struttura cilindrica all'esterno con affissa della pubblicità",
+                "title": "una colonna"
+            },
+            "7": {
+                "title": "una bandiera"
+            },
+            "8": {
+                "title": "uno schermo"
+            },
+            "9": {
+                "title": "uno schermo fissato al muro"
             }
         },
         "tagRenderings": {
@@ -139,7 +139,7 @@
         }
     },
     "artwork": {
-        "description": "Diverse opere d’arte",
+        "description": "Una mappa libera delle statue, i busti, i graffiti e le altre opere d'arte di tutto il mondo",
         "name": "Opere d’arte",
         "presets": {
             "0": {
@@ -158,6 +158,15 @@
                     },
                     "1": {
                         "then": "Murale"
+                    },
+                    "10": {
+                        "then": "Azulejo (ornamento decorativo piastrellato spagnolo)"
+                    },
+                    "11": {
+                        "then": "Mosaico di piastrelle"
+                    },
+                    "12": {
+                        "then": "Scultura in legno"
                     },
                     "2": {
                         "then": "Dipinto"
@@ -182,15 +191,6 @@
                     },
                     "9": {
                         "then": "Rilievo"
-                    },
-                    "10": {
-                        "then": "Azulejo (ornamento decorativo piastrellato spagnolo)"
-                    },
-                    "11": {
-                        "then": "Mosaico di piastrelle"
-                    },
-                    "12": {
-                        "then": "Scultura in legno"
                     }
                 },
                 "question": "Che tipo di opera d’arte è questo?",
@@ -830,14 +830,14 @@
     "bike_shop": {
         "description": "Un negozio che vende specificatamente biciclette o articoli similari",
         "filter": {
-            "1": {
+            "0": {
                 "options": {
                     "0": {
                         "question": "Vende biciclette usate"
                     }
                 }
             },
-            "2": {
+            "1": {
                 "options": {
                     "0": {
                         "question": "Offre riparazioni fai da te"
@@ -849,110 +849,6 @@
         "presets": {
             "0": {
                 "title": "una negozio/riparatore di bici"
-            }
-        },
-        "tagRenderings": {
-            "bike_repair_bike-pump-service": {
-                "mappings": {
-                    "0": {
-                        "then": "Questo negozio offre l’uso pubblico di una pompa per bici"
-                    },
-                    "1": {
-                        "then": "Questo negozio non offre l’uso pubblico di una pompa per bici"
-                    },
-                    "2": {
-                        "then": "C’è una pompa per bici, è mostrata come punto separato"
-                    }
-                },
-                "question": "Questo negozio offre l’uso a chiunque di una pompa per bici?"
-            },
-            "bike_repair_bike-wash": {
-                "mappings": {
-                    "0": {
-                        "then": "Questo negozio lava le biciclette"
-                    },
-                    "1": {
-                        "then": "Questo negozio ha una struttura dove è possibile pulire la propria bici"
-                    },
-                    "2": {
-                        "then": "Questo negozio non offre la pulizia della bicicletta"
-                    }
-                },
-                "question": "Vengono lavate le bici qua?"
-            },
-            "bike_repair_rents-bikes": {
-                "mappings": {
-                    "0": {
-                        "then": "Questo negozio noleggia le bici"
-                    },
-                    "1": {
-                        "then": "Questo negozio non noleggia le bici"
-                    }
-                },
-                "question": "Questo negozio noleggia le bici?"
-            },
-            "bike_repair_repairs-bikes": {
-                "mappings": {
-                    "0": {
-                        "then": "Questo negozio ripara bici"
-                    },
-                    "1": {
-                        "then": "Questo negozio non ripara bici"
-                    },
-                    "2": {
-                        "then": "Questo negozio ripara solo le bici che sono state acquistate qua"
-                    },
-                    "3": {
-                        "then": "Questo negozio ripara solo le biciclette di una certa marca"
-                    }
-                },
-                "question": "Questo negozio ripara bici?"
-            },
-            "bike_repair_second-hand-bikes": {
-                "mappings": {
-                    "0": {
-                        "then": "Questo negozio vende bici usate"
-                    },
-                    "1": {
-                        "then": "Questo negozio non vende bici usate"
-                    },
-                    "2": {
-                        "then": "Questo negozio vende solamente bici usate"
-                    }
-                },
-                "question": "Questo negozio vende bici usate?"
-            },
-            "bike_repair_sells-bikes": {
-                "mappings": {
-                    "0": {
-                        "then": "Questo negozio vende bici"
-                    },
-                    "1": {
-                        "then": "Questo negozio non vende bici"
-                    }
-                },
-                "question": "Questo negozio vende bici?"
-            },
-            "bike_repair_tools-service": {
-                "mappings": {
-                    "0": {
-                        "then": "Questo negozio offre degli attrezzi per la riparazione fai da te"
-                    },
-                    "1": {
-                        "then": "Questo negozio non offre degli attrezzi per la riparazione fai da te"
-                    },
-                    "2": {
-                        "then": "Gli attrezzi per la riparazione fai da te sono disponibili solamente se hai acquistato/noleggiato la bici nel negozio"
-                    }
-                },
-                "question": "Sono presenti degli attrezzi per riparare la propria bici?"
-            },
-            "bike_shop-is-bicycle_shop": {
-                "render": "Questo negozio è specializzato nella vendita di {shop} ed effettua attività relative alle biciclette"
-            },
-            "bike_shop-name": {
-                "question": "Come si chiama questo negozio di biciclette?",
-                "render": "Questo negozio di biciclette si chiama {name}"
             }
         },
         "title": {
@@ -970,6 +866,9 @@
                     "then": "Negozio di biciclette <i>{name}</i>"
                 },
                 "5": {
+                    "then": "Venditore/riparatore di biciclette <i>{name}</i>"
+                },
+                "6": {
                     "then": "Venditore/riparatore di biciclette <i>{name}</i>"
                 }
             },
@@ -1293,6 +1192,12 @@
             "render": "Via di arrampicata"
         }
     },
+    "cycle_highways": {
+        "name": "strade per biciclette",
+        "title": {
+            "render": "strada per bicilette"
+        }
+    },
     "defibrillator": {
         "name": "Defibrillatori",
         "presets": {
@@ -1569,13 +1474,11 @@
         "name": "Bici fantasma",
         "presets": {
             "0": {
+                "description": "Una <b>bici fantasma</b> è il memoriale di un ciclista che è morto in un incidente stradale e che ha la forma di una bicicletta bianca piazzata in maniera stabile vicino al luogo dell’incidente.",
                 "title": "una bici fantasma"
             }
         },
         "tagRenderings": {
-            "ghost-bike-explanation": {
-                "render": "Una <b>bici fantasma</b> è il memoriale di un ciclista che è morto in un incidente stradale e che ha la forma di una bicicletta bianca piazzata in maniera stabile vicino al luogo dell’incidente."
-            },
             "ghost_bike-inscription": {
                 "question": "Che cosa è scritto sulla bici fantasma?",
                 "render": "<i>{inscription}</i>"
@@ -2154,27 +2057,6 @@
                     "1": {
                         "question": "Riciclo di batterie"
                     },
-                    "2": {
-                        "question": "Riciclo di confezioni per bevande"
-                    },
-                    "3": {
-                        "question": "Riciclo di lattine"
-                    },
-                    "4": {
-                        "question": "Riciclo di abiti"
-                    },
-                    "5": {
-                        "question": "Riciclo di olio da cucina"
-                    },
-                    "6": {
-                        "question": "Riciclo di olio da motore"
-                    },
-                    "8": {
-                        "question": "Riciclo di umido"
-                    },
-                    "9": {
-                        "question": "Riciclo di bottiglie di vetro"
-                    },
                     "10": {
                         "question": "Riciclo di vetro"
                     },
@@ -2202,8 +2084,29 @@
                     "19": {
                         "question": "Riciclo di secco"
                     },
+                    "2": {
+                        "question": "Riciclo di confezioni per bevande"
+                    },
                     "20": {
                         "question": "Riciclo di secco"
+                    },
+                    "3": {
+                        "question": "Riciclo di lattine"
+                    },
+                    "4": {
+                        "question": "Riciclo di abiti"
+                    },
+                    "5": {
+                        "question": "Riciclo di olio da cucina"
+                    },
+                    "6": {
+                        "question": "Riciclo di olio da motore"
+                    },
+                    "8": {
+                        "question": "Riciclo di umido"
+                    },
+                    "9": {
+                        "question": "Riciclo di bottiglie di vetro"
                     }
                 }
             },
@@ -2256,27 +2159,6 @@
                     "1": {
                         "then": "Cartoni per bevande"
                     },
-                    "2": {
-                        "then": "Lattine"
-                    },
-                    "3": {
-                        "then": "Abiti"
-                    },
-                    "4": {
-                        "then": "Olio da cucina"
-                    },
-                    "5": {
-                        "then": "Olio di motore"
-                    },
-                    "7": {
-                        "then": "Verde"
-                    },
-                    "8": {
-                        "then": "Umido"
-                    },
-                    "9": {
-                        "then": "Bottiglie di vetro"
-                    },
                     "10": {
                         "then": "Vetro"
                     },
@@ -2298,6 +2180,9 @@
                     "19": {
                         "then": "Rottami metallici"
                     },
+                    "2": {
+                        "then": "Lattine"
+                    },
                     "20": {
                         "then": "Scarpe"
                     },
@@ -2312,6 +2197,24 @@
                     },
                     "24": {
                         "then": "Secco"
+                    },
+                    "3": {
+                        "then": "Abiti"
+                    },
+                    "4": {
+                        "then": "Olio da cucina"
+                    },
+                    "5": {
+                        "then": "Olio di motore"
+                    },
+                    "7": {
+                        "then": "Verde"
+                    },
+                    "8": {
+                        "then": "Umido"
+                    },
+                    "9": {
+                        "then": "Bottiglie di vetro"
                     }
                 },
                 "question": "Cosa si può riciclare qui?"
@@ -2353,6 +2256,97 @@
                 }
             },
             "render": "Impianti di riciclo"
+        }
+    },
+    "shops": {
+        "tagRenderings": {
+            "bicycle_rental": {
+                "mappings": {
+                    "0": {
+                        "then": "Questo negozio noleggia le bici"
+                    },
+                    "1": {
+                        "then": "Questo negozio non noleggia le bici"
+                    }
+                },
+                "question": "Questo negozio noleggia le bici?"
+            },
+            "bike_pump_service": {
+                "mappings": {
+                    "0": {
+                        "then": "Questo negozio offre l’uso pubblico di una pompa per bici"
+                    },
+                    "1": {
+                        "then": "Questo negozio non offre l’uso pubblico di una pompa per bici"
+                    },
+                    "2": {
+                        "then": "C’è una pompa per bici, è mostrata come punto separato"
+                    }
+                },
+                "question": "Questo negozio offre l’uso a chiunque di una pompa per bici?"
+            },
+            "bike_repair_tools": {
+                "mappings": {
+                    "0": {
+                        "then": "Questo negozio offre degli attrezzi per la riparazione fai da te"
+                    },
+                    "1": {
+                        "then": "Questo negozio non offre degli attrezzi per la riparazione fai da te"
+                    },
+                    "2": {
+                        "then": "Gli attrezzi per la riparazione fai da te sono disponibili solamente se hai acquistato/noleggiato la bici nel negozio"
+                    }
+                },
+                "question": "Sono presenti degli attrezzi per riparare la propria bici?"
+            },
+            "bike_second_hand": {
+                "mappings": {
+                    "0": {
+                        "then": "Questo negozio vende bici usate"
+                    },
+                    "1": {
+                        "then": "Questo negozio non vende bici usate"
+                    },
+                    "2": {
+                        "then": "Questo negozio vende solamente bici usate"
+                    }
+                },
+                "question": "Questo negozio vende bici usate?"
+            },
+            "bike_wash": {
+                "mappings": {
+                    "0": {
+                        "then": "Questo negozio lava le biciclette"
+                    },
+                    "1": {
+                        "then": "Questo negozio ha una struttura dove è possibile pulire la propria bici"
+                    },
+                    "2": {
+                        "then": "Questo negozio non offre la pulizia della bicicletta"
+                    }
+                },
+                "question": "Vengono lavate le bici qua?"
+            },
+            "repairs_bikes": {
+                "mappings": {
+                    "0": {
+                        "then": "Questo negozio ripara bici"
+                    },
+                    "1": {
+                        "then": "Questo negozio non ripara bici"
+                    },
+                    "2": {
+                        "then": "Questo negozio ripara solo le bici che sono state acquistate qua"
+                    },
+                    "3": {
+                        "then": "Questo negozio ripara solo le biciclette di una certa marca"
+                    }
+                },
+                "question": "Questo negozio ripara bici?"
+            },
+            "sells_new_bikes": {
+                "question": "Questo negozio vende bici?"
+            }
         }
     },
     "slow_roads": {
